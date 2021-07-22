@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: $fuentePrimaria;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+}
+
+main, section {
+     /*Operaciones con SASS*/
+    width: $anchoTotal - $margenGeneral;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.generales__titulos {
+    color: $marronIntermedio;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: $fuenteSecundaria;
+    font-weight: 100;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.generales__subTitulos {
+    color: $marronIntermedio;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: $fuenteSecundaria;
+    font-weight: 100;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.generales__centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.generales__mediaLink {
+    text-decoration: none;
+    color: $grisOscuro;
+    margin-bottom: 20px;
+}
+
+@each $clase, $icon in $media {
+    .generales__#{$clase} {
+        background-image: url(../media/#{$icon}.png);
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+        margin-right: 10px;
+    }
+}
+
+.generales__importante {
+    font-weight: bold;
+}
+
+/* Correcion de estilos bootstrap */
+
+.container-fluid {
+    width: 90%;
+    margin-top: 20px;
+}
+
+//Estilos Responsive
+@media (max-width: 1056px) {
+    body {
+        padding-top: 80px;
+    }
+}
+

@@ -1,0 +1,26 @@
+.nosotros {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "foto-nosotros  titulo-nosotros"
+    "foto-nosotros  texto-nosotros";
+    margin-bottom: 50px;
+    grid-template-rows: auto 1fr;
+    &__titulo {
+        grid-area: titulo-nosotros;
+        padding-left: 20px;
+    }
+    &__texto {
+        grid-area: texto-nosotros;
+        padding-left: 20px;
+        line-height: 30px;
+        &__parrafoFinal {
+            padding-top: 20px;
+        }
+    }
+    &__foto {
+        grid-area: foto-nosotros;
+    }
+}
+
+

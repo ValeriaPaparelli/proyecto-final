@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><!--Acá agregué etiquetas meta de palabras clave "Keywords" y descripción "Description"-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cosmetica, natural, creltyfree, vegan, ecofriendly, skincare, 
+    producto natural, piel sana, piel cuidada, saludable, cuidado facial, limpieza facial">
+    <meta name="description" content="Productos cosméticos elaborados a partir de materia prima
+    natural; libres de parabenos, colorantes, sulfatos, aluminio y aromas sintéticos.
+    Alimento verdadero para la piel. Cambios reales.">
+    <!--A cada página le puse un título distinto relacionado con la sección-->
+    <title>Alondra | Cosmética Natural</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="icon"  type="image/png"  tamaños="16x16"  href="./media/favicon.png" > 
+    <!--CSS Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <a href="./index.html"><!--en todas las pàginas el logo te lleva al index-->
+                <img class="header__logo" src="./media/logo-png.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul class="header__menu">
+                <li class="header__menu__seleccionada"><a href="./index.html">HOME</a></li>
+                <li><a href="./pages/nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">PRODUCTOS</a>
+                    <ul class="header__menu__submenu">
+                        <li><a href="./pages/facial.html">FACIALES</a></li>
+                        <li><a href="./pages/corporal.html">CORPORALES</a></li>
+                        <li><a href="./pages/limpieza.html">LIMPIEZA</a></li>
+                    </ul>
+                </li>
+                <li><a href="./pages/cuidados.html">CUIDADOS</a></li>
+                <li><a href="./pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="header__botonMenu">
+            <img src="./media/icono-menu.png" alt="Botón Menú">
+        </div>
+    </header>
+    <!--Le agregué un Carrousel de Bootstrap-Le mejoré la calidad de las imágenes y el tamaño-->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./media/slide1.jpg" class="d-block w-100" alt="Imagen de cosmética natural">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="slideTitulo">COSMÉTICA NATURAL</h5>
+                <p class="slideSubtitulo">Sin parabenos ni derivados del petroleo.</p>
+            </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+            <img src="./media/slide2.jpg" class="d-block w-100" alt="Imagen de los poductos">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="slideTitulo">CRUELTY FREE</h5>
+                <p class="slideSubtitulo">Productos libre de crueldad animal.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+            <img src="./media/slide3.jpg" class="d-block w-100" alt="Imagen de arcillas naturales">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="slideTitulo">COSMÉTICA CONSCIENTE</h5>
+                <p class="slideSubtitulo">Pequeños cambios hacen grandes diferencias.</p>
+            </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section class="index__productos">
+        <h1 class="index__productos__titulo">Nuestros Productos</h1>
+        <div class="index__productos__contenedor">
+            <a class="index__productos__contenedor__link" href="./pages/facial.html">
+                <div class="index__productos__contenedor__bg index__facial">
+                    <h4 class="index__productos__contenedor__bg__texto">PRODUCTOS FACIALES</h4><!--Esto es un link que te lleva a los productos faciales. También se puede acceder desde el menú-->
+                </div>
+            </a>
+            <a class="index__productos__contenedor__link" href="./pages/corporal.html">
+                <div class="index__productos__contenedor__bg index__corporal">
+                    <h4 class="index__productos__contenedor__bg__texto">PRODUCTOS CORPORALES</h4> <!--Esto es un link que te lleva a los productos corporales. También se puede acceder desde el menú-->
+                </div>
+            </a>
+            <a class="index__productos__contenedor__link" href="./pages/limpieza.html">
+                <div class="index__productos__contenedor__bg index__limpieza">
+                    <h4 class="index__productos__contenedor__bg__texto">PRODUCTOS DE LIMPIEZA</h4> <!--Esto es un link que te lleva a los productos de limpieza facial. También se puede acceder desde el menú-->
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="index__section">
+        <div class="index__textoHome">
+            <p>Con mis productos busco el equilibrio en el órgano más grande del cuerpo, la piel.</p>
+            <p>Todos los productos son elaborados con materias primas naturales, amigables con el medio ambiente y el ser humano.</p>
+            <p><strong>"Pequeños cambios hacen grandes diferencias"</strong></p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__contenido">
+            <div class="footer__contenido__alondra">
+                <h5 class="footer__contenido__alondra__titulo">ALONDRA</h5>
+                <div class="footer__contenido__alondra__parrafo">
+                    <P>La alondra es reconocida por su canto melodioso, 
+                    que hace vibrar el alma por su pequeña envergadura.</p>
+                    <p>Es considerada como símbolo de alegría de vivir,
+                    es llamada el pájaro cantor, que además canta mientras vuela.</p>
+                    <p>Inicia su vuelo para perderse de la vista humana,
+                    luego desciende al suelo donde es muy difícil identificarla,
+                    pues su mimetismo, le permite camuflarse en la vegetación
+                    de manera perfecta.</p> 
+                </div>
+            </div>
+            <div class="footer__contenido__contacto">
+                <h5 class="footer__contenido__contacto__titulo">CONTACTANOS</h5>
+                <p>
+                    <span class="generales__email"></span>
+                    <a class="generales__mediaLink" href="mailto:alondra.cosmeticanatural@gmail.com">alondra.cosmeticanatural@gmail.com</a>
+                </p>
+                 <!--Link para enviar un mail-->
+                <h5 class="footer__contenido__contacto__titulo">SOCIAL MEDIA</h5>
+                <p> 
+                    <span class="generales__instagram"></span>
+                    <a class="generales__mediaLink" href="https://www.instagram.com/alondra.cosmeticanatural/"> <!--Este link te lleva al instagram de la marca-->
+                        @alondra.cosmeticanatural
+                    </a> 
+                </p>
+            </div>    
+        </div>
+        <div class="footer__derechos">
+            <p>2021 alondracosmeticanatural.com.ar | All Rights Reserved. | Powered by VALERIA PAPARELLI</p>
+        </div>
+    </footer>
+    <!--Javascript de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

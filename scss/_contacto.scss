@@ -1,0 +1,65 @@
+.seccion-formulario {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+form {
+    padding: 0px 25px;
+}
+
+.campo-formulario {
+    margin: 10px 0px;
+}
+
+input, textarea {
+    padding: 8px;
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+}
+
+input, textarea {
+    border-bottom: 1px solid $marronIntermedio;
+}
+
+.botonEnviar {
+    margin-top: 25px;
+    display: block;
+    background-color: $marronIntermedio;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botonEnviar:hover {
+    background-color: change-color($color: $marronIntermedio, $alpha: 0.8);
+}
+
+.formulario-contacto {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contactos-media > p {
+    margin: 15px 0px;
+}
+
+/*Responsive página contacto*/
+
+@media (max-width: 576px) {
+    .titulo-media {
+        padding-bottom: 0px;
+    }
+
+    .generales__mediaLink {
+        display: block;
+        text-align: center;
+    }
+}

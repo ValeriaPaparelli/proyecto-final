@@ -1,0 +1,139 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: auto;
+   padding: 0px;
+   min-height: 100vh;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   display: flex;
+   flex-direction: column;
+}
+
+.header, .page-container, .footer {
+   display: flex;
+   width: 100vw;
+   flex-wrap: nowrap;
+}
+
+.navbar ul, .footer-navbar ul, .social-links ul {
+   padding: 0px;
+   margin: 0px;
+   display: flex;
+   list-style: none;
+}
+
+.sidebar ul {
+   padding: 0px;
+   margin: 0px;
+   list-style: none;
+}
+
+.header {
+   background-color: black;
+   color: rgb(108, 155, 237);
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.navbar li {
+   background-color: rgb(44, 54, 61);
+   padding: 20px 40px;
+}
+
+.navbar li:hover {
+   background-color: rgb(56, 68, 77);
+   cursor: pointer;
+}
+
+.page-container {
+   flex: 1;
+}
+
+.main {
+   padding: 20px;
+   width: 80vw;
+   border-right: 1px solid silver;
+}
+
+.sidebar {
+   padding: 20px;
+   width: 20vw;
+   text-align: center;
+}
+
+.sidebar-content ul {
+   list-style: none;
+}
+
+.footer {
+   background-color: rgb(218, 217, 181);
+   padding: 20px;
+   justify-content: space-around;
+   height: 100px;
+}
+
+@media (max-width: 1160px) {
+   .main {
+      width: 75vw;
+   }
+
+   .sidebar {
+      width: 25vw;
+   }
+}
+
+@media (max-width: 788px) {
+   .header {
+      padding: 0px;
+      flex-direction: column;
+   }
+
+   .navbar {
+      background-color: rgb(44, 54, 61);
+   }
+
+   .navbar ul {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      width: 100vw;
+   }
+
+   .navbar li {
+      padding: 10px 40px;
+   }
+
+   .page-container {
+      flex-direction: column;
+   }
+
+   .main {
+      width: 100vw;
+      border-bottom: 1px solid silver;
+   }
+
+   .sidebar {
+      justify-content: space-around;
+      width: 100vw;
+   }
+
+   .footer-navbar {
+      display: none;
+   }
+
+   .footer, .social-links {
+      width: 100vw;
+   }
+
+   .social-links ul {
+      justify-content: space-around;
+   }
+}
+
+@media (max-width: 618px) {
+   .navbar {
+      display: none;
+   }
+}

@@ -1,0 +1,31 @@
+.producto {
+    display: grid;
+    grid-template-areas: 
+    "titulo-producto titulo-producto"
+    "foto-producto   descripcion-producto";
+    border-top: 1px solid $grisClaro;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr [descripcion-producto] 0.1fr;
+    padding: 10px;
+    margin: 15px 0;
+    &__titulo {
+        grid-area: titulo-producto;
+        padding-bottom: 15px;
+    }
+    &__foto {
+        grid-area: foto-producto;
+    }
+    &__descripcion {
+        grid-area: descripcion-producto;
+        padding-left: 20px;
+    }
+    &__parrafo {
+        color: $grisOscuro;
+        margin: 10px auto;
+        line-height: 30px;
+    }
+    &__precio {
+        font-size: 24px;
+        color: $marronIntermedio;
+    }
+}

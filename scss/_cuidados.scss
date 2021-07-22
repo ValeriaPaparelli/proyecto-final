@@ -1,0 +1,25 @@
+.cuidados {
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: 
+    "foto-cuidados  titulo-cuidados"
+    "foto-cuidados  texto-cuidados";
+    margin-bottom: 50px;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    &__titulo {
+        grid-area: titulo-cuidados;
+        padding-left: 20px;
+    }
+    &__texto {
+        grid-area: texto-cuidados;
+        padding-left: 20px;
+        color: $grisOscuro;
+        line-height: 30px;
+    }
+    &__foto {
+        grid-area: foto-cuidados;
+    }
+}
+
+
