@@ -293,6 +293,30 @@ main, section {
   content: "";
   opacity: 1; }
 
+.index__arcillas {
+  position: relative;
+  width: 200px;
+  height: 340px;
+  background-color: #575759;
+  text-decoration: none; }
+
+.index__arcillas::before {
+  content: "";
+  background-image: url("../media/arcillas.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  transition: 0.8s; }
+
+.index__arcillas:hover::before {
+  content: "";
+  opacity: 1; }
+
 /* Correcion de estilos bootstrap */
 .slideTitulo {
   font-size: 36px;
