@@ -1,25 +1,50 @@
 .cuidados {
-    margin-top: 40px;
     display: grid;
     grid-template-areas: 
-    "foto-cuidados  titulo-cuidados"
-    "foto-cuidados  texto-cuidados";
-    margin-bottom: 50px;
-    grid-template-rows: auto 1fr;
-    grid-template-columns: auto 1fr;
-    &__titulo {
-        grid-area: titulo-cuidados;
-        padding-left: 20px;
+    "titulo-principal titulo-principal titulo-principal titulo-principal"
+    "foto-cuidados1 titulo-cuidados1 foto-cuidados2 titulo-cuidados2"
+    "foto-cuidados1 texto-cuidados1 foto-cuidados2 texto-cuidados2";
+    &__tituloPrincipal {
+        grid-area: titulo-principal;
+        border-bottom: 1px solid $grisClaro;
     }
-    &__texto {
-        grid-area: texto-cuidados;
-        padding-left: 20px;
-        color: $grisOscuro;
-        line-height: 30px;
+    &__titulo1 {
+        grid-area: titulo-cuidados1;
+        padding-top: 30px;
+        padding-left: 25px;
     }
-    &__foto {
-        grid-area: foto-cuidados;
+    &__texto1 {
+        grid-area: texto-cuidados1;
+        padding-left: 25px;
+        &__linkLeer {
+            text-decoration: none;
+            color: $marronIntermedio;
+        }
+    }
+    &__foto1 {
+        grid-area: foto-cuidados1;
+        padding-top: 50px;
+    }
+    &__titulo2 {
+        grid-area: titulo-cuidados2;
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+    &__texto2 {
+        grid-area: texto-cuidados2;
+        padding-left: 25px;
+        &__linkLeer {
+            text-decoration: none;
+            color: $marronIntermedio;
+        }
+    }
+    &__foto2 {
+        grid-area: foto-cuidados2;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-left: 50px;
     }
 }
+
 
 

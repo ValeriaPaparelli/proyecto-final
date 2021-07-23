@@ -388,22 +388,39 @@ main, section {
     color: #b39864; }
 
 .cuidados {
-  margin-top: 40px;
   display: grid;
-  grid-template-areas: "foto-cuidados  titulo-cuidados" "foto-cuidados  texto-cuidados";
-  margin-bottom: 50px;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr; }
-  .cuidados__titulo {
-    grid-area: titulo-cuidados;
-    padding-left: 20px; }
-  .cuidados__texto {
-    grid-area: texto-cuidados;
-    padding-left: 20px;
-    color: #575759;
-    line-height: 30px; }
-  .cuidados__foto {
-    grid-area: foto-cuidados; }
+  grid-template-areas: "titulo-principal titulo-principal titulo-principal titulo-principal" "foto-cuidados1 titulo-cuidados1 foto-cuidados2 titulo-cuidados2" "foto-cuidados1 texto-cuidados1 foto-cuidados2 texto-cuidados2"; }
+  .cuidados__tituloPrincipal {
+    grid-area: titulo-principal;
+    border-bottom: 1px solid silver; }
+  .cuidados__titulo1 {
+    grid-area: titulo-cuidados1;
+    padding-top: 30px;
+    padding-left: 25px; }
+  .cuidados__texto1 {
+    grid-area: texto-cuidados1;
+    padding-left: 25px; }
+    .cuidados__texto1__linkLeer {
+      text-decoration: none;
+      color: #b39864; }
+  .cuidados__foto1 {
+    grid-area: foto-cuidados1;
+    padding-top: 50px; }
+  .cuidados__titulo2 {
+    grid-area: titulo-cuidados2;
+    padding-top: 30px;
+    padding-left: 25px; }
+  .cuidados__texto2 {
+    grid-area: texto-cuidados2;
+    padding-left: 25px; }
+    .cuidados__texto2__linkLeer {
+      text-decoration: none;
+      color: #b39864; }
+  .cuidados__foto2 {
+    grid-area: foto-cuidados2;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-left: 50px; }
 
 .seccion-formulario {
   margin-top: 60px;
