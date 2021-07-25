@@ -422,6 +422,19 @@ main, section {
     padding-left: 10px;
     padding-left: 50px; }
 
+.articulos {
+  display: flex;
+  justify-content: space-between; }
+  .articulos__articulo {
+    width: 65%; }
+    .articulos__articulo__imagen {
+      display: block;
+      width: 100%; }
+    .articulos__articulo__contenido {
+      margin-top: 20px; }
+  .articulos__otros {
+    width: 20%; }
+
 .seccion-formulario {
   margin-top: 60px;
   margin-bottom: 60px; }
