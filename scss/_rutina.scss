@@ -3,6 +3,7 @@
     justify-content: space-between;
     &__articulo {
         width: 65%;
+        
         &__imagen {
             display: block;
             width: 100%;
@@ -12,6 +13,21 @@
         }
     }
     &__otros {
-        width: 20%;
+        width: 15%;
+        border-left: 1px solid rgb(223, 218, 218);
+        padding-left:35px;
+        &__links {
+            list-style-type: none;
+            padding: 0px;
+        }
+        &__links > li {
+            margin-bottom: 15px;
+        }
+        &__links > li > a {
+            text-decoration: none;
+            color:$marronOscuro;
+            font-family: $fuenteSecundaria;
+            font-size: 25px;
+        }
     }
 }

@@ -36,3 +36,7 @@
 [0m2021.07.20 17:23:32 WARN  Build server is not auto-connectable.[0m
 [0m2021.07.20 17:23:32 WARN  no build tool detected in workspace 'C:\Users\Fran\Desktop\WebAlondra'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
 [0m2021.07.20 23:15:51 INFO  shutting down Metals[0m
+[0m2021.07.23 14:03:55 INFO  Started: Metals version 0.10.5 in workspace 'C:\Users\Fran\Desktop\WebAlondra' for client Visual Studio Code 1.58.2.[0m
+[0m2021.07.23 14:03:56 INFO  time: initialize in 0.68s[0m
+[0m2021.07.23 14:03:58 WARN  Build server is not auto-connectable.[0m
+[0m2021.07.23 14:03:58 WARN  no build tool detected in workspace 'C:\Users\Fran\Desktop\WebAlondra'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
