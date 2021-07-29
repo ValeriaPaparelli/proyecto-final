@@ -41,53 +41,49 @@
             </ul>
         </nav>
     </header>
-    <!--Grid de Bootstrap-->
-    <div class="container-fluid seccion-formulario">
-        <div class="row">
-            <div class="col-lg-3 offset-lg-1 col-md-4 col-sm-6 col-12">
-                <img src="../media/fotoContacto.jpg" alt="Imagen de productos de la marca">
-            </div>
-            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                <form class="formulario" action="" autocomplete="false">
-                    <h2 class="generales__titulos">Escribinos ...</h2>
-                    <div class="campo-formulario">
-                        <input autocomplete="false" type="text" name="nombre" placeholder="Nombre">
-                    </div>
-                    <div class="campo-formulario">
-                        <input autocomplete="false" type="text" name="apellido" placeholder="Apellido">
-                    </div>
-                    <div class="campo-formulario">
-                        <input autocomplete="false" type="text" name="email" placeholder="E-mail">
-                    </div>
-                    <div class="campo-formulario">
-                        <textarea autocomplete="false" name="" id="" cols="22" rows="5" placeholder="Consullta"></textarea>
-                    </div>
-                    <div class="campo-formulario">
-                        <button class="botonEnviar" type="submit">Enviar</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-4 offset-lg-1 col-md-4 col-sm-6 col-12">
-                <div class="contactos-media"> <!--Agregé los íconos de ig. mail y whatsApp-->
-                    <h3 class="generales__subTitulos">También podés contactarnos por...</h3>
-                    <p>
-                        <span class="generales__mediaLink">
-                            <span class="generales__email"></span>
-                            <a href="mailto:alondra.cosmeticanatural@gmail.com">
-                                alondra.cosmeticanatural@gmail.com
-                            </a>
-                        </span>
-                    </p>
-                    <p> 
-                        <a class="generales__mediaLink" href="https://www.instagram.com/alondra.cosmeticanatural/">
-                            <span class="generales__instagram"></span>
-                            @alondra.cosmeticanatural
-                        </a>
-                    </p>
+    <div class="contacto">
+        <div class="contacto__imagen">
+            <img src="../media/fotoContacto.jpg" alt="Imagen de productos de la marca">
+        </div>
+        <div class="contacto__formulario">
+            <form>
+                <h2 class="generales__titulos">Escribinos ...</h2>
+                <div class="contacto__formulario__grupo">
+                    <input autocomplete="false" type="text" name="nombre" placeholder="Nombre">
                 </div>
+                <div class="contacto__formulario__grupo">
+                    <input autocomplete="false" type="text" name="apellido" placeholder="Apellido">
+                </div>
+                <div class="contacto__formulario__grupo">
+                    <input autocomplete="false" type="text" name="email" placeholder="E-mail">
+                </div>
+                <div class="contacto__formulario__grupo">
+                    <textarea autocomplete="false" name="" id="" cols="22" rows="5" placeholder="Consullta"></textarea>
+                </div>
+                <div class="contacto__formulario__grupo">
+                    <button class="botonEnviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="contactos-media"> <!--Agregé los íconos de ig. mail y whatsApp-->
+                <h3 class="generales__subTitulos">También podés contactarnos por...</h3>
+                <p>
+                    <span class="generales__mediaLink">
+                        <span class="generales__email"></span>
+                        <a href="mailto:alondra.cosmeticanatural@gmail.com">
+                            alondra.cosmeticanatural@gmail.com
+                        </a>
+                    </span>
+                </p>
+                <p> 
+                    <a class="generales__mediaLink" href="https://www.instagram.com/alondra.cosmeticanatural/">
+                        <span class="generales__instagram"></span>
+                        @alondra.cosmeticanatural
+                    </a>
+                </p>
             </div>
         </div>
-        
     </div>
     <footer class="footer">
         <div class="footer__contenido">
