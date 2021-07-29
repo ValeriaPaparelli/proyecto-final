@@ -13,7 +13,7 @@
         }
     }
     &__otros {
-        width: 15%;
+        width: 20%;
         border-left: 1px solid rgb(223, 218, 218);
         padding-left:35px;
         &__links {
@@ -25,9 +25,18 @@
         }
         &__links > li > a {
             text-decoration: none;
-            color:$marronOscuro;
+            color: $marronIntermedio;
             font-family: $fuenteSecundaria;
-            font-size: 25px;
+            font-size: 20px;
+            line-height: 10px;
         }
+        &__links > li > a:hover {
+            text-decoration: underline;
+        }
+
+        &__links > li > .actual {
+            color: $marronOscuro;
+        }
+
     }
 }
