@@ -81,7 +81,6 @@
     }
     &__menu li:hover .header__menu__submenu { 
         display: block;
-        /*Operaciones con SASS*/
         width: $anchoTotal / 8;
         margin-top: 2px;
     }
@@ -96,7 +95,10 @@
 
 //Estilos Responsive
 
-@media (max-width: 1056px) {
+@media (max-width: 1024px) {
+    nav {
+        display: none;
+    }
     .header {
         justify-content: space-between!important;
         width: 100%;
@@ -107,9 +109,37 @@
         &__botonMenu {
             display: block;
         }
+        &__menu {
+            flex-direction: column;
+            position: fixed;
+            width: 100%;
+            left: 0;
+            top: 80px;
+            background-color: white;
+            border-bottom: 1px solid rgb(230, 223, 211);
+            -webkit-box-shadow: 0px 6px 9px 2px rgba(0,0,0,0.1); 
+            box-shadow: 0px 6px 9px 2px rgba(0,0,0,0.1);
+            li {
+                margin: 0;
+                a {
+                    width: 100%;
+                }
+            }
+            
+            &__seleccionada {
+                width: 100%!important;
+            }
+            &__submenu {
+                width: 100%!important;
+                -webkit-box-shadow: 0px 6px 9px 2px rgba(0,0,0,0.1); 
+                box-shadow: 0px 6px 9px 2px rgba(0,0,0,0.1);
+                text-align: center;
+                background-color: rgb(245, 243, 238);
+                li a {
+                    padding-left: 0!important;
+                }
+            }
+        }
     }
-
-    nav {
-        display: none;
-    }
+    
 }

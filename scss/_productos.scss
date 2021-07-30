@@ -29,3 +29,16 @@
         color: $marronIntermedio;
     }
 }
+
+@media (max-width: 480px) {
+    .producto {
+        grid-template-areas: 
+        "titulo-producto"
+        "foto-producto"
+        "descripcion-producto";
+        padding: 0;
+        &__descripcion {
+            padding: 0;
+        }
+    }
+}

@@ -50,22 +50,30 @@
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 780px) {
     .footer {
         width: 100%;
-        text-align: center;
         padding: 0 10px;
         &__contenido {
+            display: flex;
             flex-direction: column;
+            &__alondra {
+                width: 100%;
+            }
             &__alondra__parrafo {
                 width: 100%;
             }
-            &__contacto__titulo {
-                margin-top: 20px;
+            &__contacto {
+                width: 100%;
+                &__titulo {
+                    margin-top: 20px;
+                    width: 100%;
+                }
             }
         }
         &__derechos > p {
             margin-top: 0;
+            width: 100%;
         }
     }
 }
