@@ -401,15 +401,12 @@ main, section {
     padding-left: 20px; }
   .nosotros__texto {
     grid-area: texto-nosotros;
-    padding-left: 20px;
-    line-height: 30px; }
+    line-height: 30px;
+    padding-left: 20px; }
     .nosotros__texto__parrafoFinal {
       padding-top: 20px; }
   .nosotros__foto {
     grid-area: foto-nosotros; }
-    .nosotros__foto img {
-      display: block;
-      width: 450px; }
 
 @media (max-width: 480px) {
   .nosotros {
@@ -429,7 +426,8 @@ main, section {
     .nosotros__foto img {
       width: 100% !important; }
     .nosotros__texto {
-      margin-top: 20px; } }
+      margin-top: 20px;
+      padding-left: 0; } }
 
 .producto {
   display: grid;
@@ -504,7 +502,8 @@ main, section {
     width: 65%; }
     .articulos__articulo__imagen {
       display: block;
-      width: 100%; }
+      float: left;
+      margin-right: 15px; }
     .articulos__articulo__contenido {
       margin-top: 20px; }
   .articulos__otros {

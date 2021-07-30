@@ -7,17 +7,19 @@
     margin-bottom: 50px;
     grid-template-rows: auto 1fr;
     &__titulo {
+        grid-area: titulo-nosotros;
         padding-left: 20px;
     }
     &__texto {
+        grid-area: texto-nosotros;
         line-height: 30px;
+        padding-left:20px;
         &__parrafoFinal {
             padding-top: 20px;
         }
     }
-    &__foto img {
-        display: block;
-        width: 450px;
+    &__foto {
+        grid-area: foto-nosotros;
     }
 }
 
@@ -50,6 +52,7 @@
         }
         &__texto {
             margin-top: 20px;
+            padding-left: 0;
         }
     }
 }
