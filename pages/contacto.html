@@ -19,27 +19,30 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a href="../index.html">
-                <img width="80px" src="../media/logo-png.png" alt="Logo">
+        <div>
+            <a href="../index.html"><!--en todas las pàginas el logo te lleva al index-->
+                <img class="header__logo" src="../media/logo-png.png" alt="Logo">
             </a>
         </div>
         <nav>
             <ul class="header__menu">
-                <li><a href="../index.html"><strong>HOME</strong></a></li>
-                <li><a href="../pages/nosotros.html"><strong>NOSOTROS</strong></a></li>
-                <li><strong><a href="#"><strong></strong>PRODUCTOS</strong></a>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="#">PRODUCTOS</a>
                     <ul class="header__menu__submenu">
-                        <li><a href="../pages/facial.html">FACIALES</a></li>
-                        <li><a href="../pages/corporal.html">CORPORALES</a></li>
-                        <li><a href="../pages/limpieza.html">LIMPIEZA</a></li>
-                        <li><a href="../pages/mascaras.html">ARCILLAS</a></li>
+                        <li><a href="./facial.html">FACIALES</a></li>
+                        <li><a href="./corporal.html">CORPORALES</a></li>
+                        <li><a href="./limpieza.html">LIMPIEZA</a></li>
+                        <li><a href="./mascaras.html">ARCILLAS</a></li>
                     </ul>
                 </li>
-                <li><a href="../pages/cuidados.html"><strong>CUIDADOS</strong></a></li>
-                <li class="header__menu__seleccionada"><a href="../pages/contacto.html"><strong>CONTACTO</strong></a></li>
+                <li><a href="./cuidados.html">CUIDADOS</a></li>
+                <li class="header__menu__seleccionada"><a href="./contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
+        <div class="header__botonMenu">
+            <img src="../media/icono-menu.png" alt="Botón Menú">
+        </div>
     </header>
     <div class="contacto">
         <div class="contacto__imagen">
@@ -66,7 +69,7 @@
             </form>
         </div>
         <div>
-            <div class="contactos-media"> <!--Agregé los íconos de ig. mail y whatsApp-->
+            <div class="contacto__media"> <!--Agregé los íconos de ig. mail y whatsApp-->
                 <h3 class="generales__subTitulos">También podés contactarnos por...</h3>
                 <p>
                     <span class="generales__mediaLink">

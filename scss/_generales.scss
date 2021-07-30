@@ -62,17 +62,21 @@ main, section {
     font-weight: bold;
 }
 
-/* Correcion de estilos bootstrap */
-
-.container-fluid {
-    width: 90%;
-    margin-top: 20px;
-}
-
 //Estilos Responsive
 @media (max-width: 1056px) {
     body {
         padding-top: 80px;
     }
+}
+
+@media (max-width: 480px) {
+    main, section {
+        width: 100%;
+    }
+
+    .generales__email, .generales__instagram {
+        margin-right: 0px;
+    }
+    
 }
 

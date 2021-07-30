@@ -7,20 +7,53 @@
     margin-bottom: 50px;
     grid-template-rows: auto 1fr;
     &__titulo {
-        grid-area: titulo-nosotros;
         padding-left: 20px;
     }
     &__texto {
-        grid-area: texto-nosotros;
-        padding-left: 20px;
         line-height: 30px;
         &__parrafoFinal {
             padding-top: 20px;
         }
     }
-    &__foto {
-        grid-area: foto-nosotros;
+    &__foto img {
+            display: block;
+            width: 450px;
+        }
     }
 }
+
+@media (max-width: 480px) {
+    .nosotros {
+        width: 100%!important;
+        grid-template-areas: 
+        "titulo-nosotros"
+        "foto-nosotros"
+        "texto-nosotros";
+    }
+}
+
+@media (max-width: 1024px) {
+    .nosotros {
+        margin-top: 0;
+        width: 100%;
+        grid-template-areas: 
+        "titulo-nosotros"
+        "foto-nosotros"
+        "texto-nosotros";
+        grid-template-columns: 100%;
+        align-items: center;
+        margin-bottom: 0;
+        &__titulo {
+            padding-left: 0px;
+        }
+        &__foto img {
+            width: 100%!important;
+        }
+        &__texto {
+            margin-top: 20px;
+        }
+    }
+}
+
 
 
