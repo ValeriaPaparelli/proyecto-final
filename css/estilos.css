@@ -9,7 +9,6 @@ body {
   padding-top: 100px; }
 
 main, section {
-  /*Operaciones con SASS*/
   width: 90%;
   margin: 20px auto;
   padding: 10px; }
@@ -76,7 +75,9 @@ main, section {
   main, section {
     width: 100%; }
   .generales__email, .generales__instagram {
-    margin-right: 0px; } }
+    margin-right: 0px;
+    margin-top: 0;
+    margin-left: 0; } }
 
 /*Agregué position fixed para que el menú siempre esté visible al hacer scroll*/
 .header {
@@ -408,6 +409,7 @@ main, section {
   .nosotros__foto {
     grid-area: foto-nosotros; }
 
+/*Estilos Responsive */
 @media (max-width: 480px) {
   .nosotros {
     width: 100% !important;
@@ -495,6 +497,29 @@ main, section {
     padding-left: 10px;
     padding-left: 50px; }
 
+@media (max-width: 1024px) {
+  main {
+    margin-bottom: 0;
+    margin-bottom: 0; }
+  section {
+    margin-top: 0;
+    padding-top: 0; }
+  .cuidados {
+    grid-template-areas: "titulo-principal" "titulo-cuidados1" "foto-cuidados1" "texto-cuidados1" "titulo-cuidados2" "foto-cuidados2" "texto-cuidados2"; }
+    .cuidados__titulo1 {
+      padding: 0; }
+    .cuidados__texto1 {
+      padding: 15px 0;
+      margin-top: 0; }
+    .cuidados__foto1 {
+      padding: 0; }
+    .cuidados__titulo2 {
+      padding: 0; }
+    .cuidados__texto2 {
+      padding: 15px 0; }
+    .cuidados__foto2 {
+      padding: 0; } }
+
 .articulos {
   display: flex;
   justify-content: space-between; }
@@ -526,6 +551,13 @@ main, section {
     .articulos__otros__links > li > .actual {
       color: #594c34; }
 
+@media (max-width: 1024px) {
+  .articulos__otros {
+    display: none; } }
+
+img {
+  margin-bottom: 15px; }
+
 .contacto {
   display: flex;
   flex-direction: row;
@@ -550,7 +582,7 @@ main, section {
     .contacto__formulario__grupo button:hover {
       background-color: #cfcab0; }
 
-/*Responsive página contacto*/
+/* Estilos Responsive*/
 @media (max-width: 1024px) {
   .contacto {
     flex-direction: column;
