@@ -151,14 +151,24 @@ main, section {
     width: 12.5%;
     margin-top: 2px; }
 
+.burgerBtn {
+  display: none; }
+
 /* Correcion de estilos bootstrap */
 .header__menu, .header__menu__submenu {
   margin-bottom: -24px;
   padding-left: 0px; }
 
 @media (max-width: 1024px) {
+  .burgerBtn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../media/icono-menu.png"); }
   nav {
     display: none; }
+  nav:target {
+    display: flex; }
   .header {
     justify-content: space-between !important;
     width: 100%;
@@ -553,10 +563,11 @@ main, section {
 
 @media (max-width: 1024px) {
   .articulos__otros {
-    display: none; } }
-
-img {
-  margin-bottom: 15px; }
+    display: none; }
+  .articulos__articulo {
+    width: 100%; }
+  img {
+    margin-bottom: 5px; } }
 
 .contacto {
   display: flex;
