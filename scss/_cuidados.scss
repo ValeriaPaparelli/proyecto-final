@@ -48,5 +48,43 @@
 
 //Estilos Responsive
 
-
+@media (max-width: 1024px) {
+    main {
+        margin-bottom: 0;
+        margin-bottom: 0;
+    }
+    section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .cuidados {
+        grid-template-areas: 
+        "titulo-principal"
+        "titulo-cuidados1"
+        "foto-cuidados1"
+        "texto-cuidados1"
+        "titulo-cuidados2"
+        "foto-cuidados2"
+        "texto-cuidados2";
+        &__titulo1 {
+            padding: 0;
+        }
+        &__texto1 {
+            padding: 15px 0;
+            margin-top: 0;
+        }
+        &__foto1 {
+            padding: 0;
+        }
+        &__titulo2 {
+            padding: 0;
+        }
+        &__texto2 {
+            padding: 15px 0;
+        }
+        &__foto2 {
+            padding: 0;
+        }
+    }
+}
 

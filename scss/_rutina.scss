@@ -41,3 +41,15 @@
 
     }
 }
+
+//Estilos Responsive
+
+@media (max-width: 1024px) {
+    .articulos__otros {
+        display: none;
+    }
+}
+
+img {
+    margin-bottom: 15px;
+}
