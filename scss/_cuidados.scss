@@ -20,6 +20,9 @@
             text-decoration: none;
             color: $marronIntermedio;
         }
+        &__linkLeer:hover {
+            color: $marronOscuro;
+        }
     }
     &__foto1 {
         grid-area: foto-cuidados1;
@@ -36,6 +39,9 @@
         &__linkLeer {
             text-decoration: none;
             color: $marronIntermedio;
+        }
+        &__linkLeer:hover {
+            color: $marronOscuro;
         }
     }
     &__foto2 {

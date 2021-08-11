@@ -40,6 +40,9 @@ main, section {
   color: #575759;
   margin-bottom: 20px; }
 
+.generales__mediaLink:hover {
+  color: #b39864; }
+
 .generales__email {
   background-image: url(../media/email-icon.png);
   display: inline-block;
@@ -251,11 +254,10 @@ main, section {
 
 .index__textoHome p, .index__textoHome p strong {
   padding-bottom: 12px;
-  font-family: "Playfair Display", serif !important;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px; }
 
 .index__textoHome p {
-  font-weight: 100;
   color: #575759; }
 
 .index__facial {
@@ -488,6 +490,8 @@ main, section {
     .cuidados__texto1__linkLeer {
       text-decoration: none;
       color: #b39864; }
+    .cuidados__texto1__linkLeer:hover {
+      color: #594c34; }
   .cuidados__foto1 {
     grid-area: foto-cuidados1;
     padding-top: 50px; }
@@ -501,6 +505,8 @@ main, section {
     .cuidados__texto2__linkLeer {
       text-decoration: none;
       color: #b39864; }
+    .cuidados__texto2__linkLeer:hover {
+      color: #594c34; }
   .cuidados__foto2 {
     grid-area: foto-cuidados2;
     padding-top: 50px;
@@ -574,6 +580,9 @@ main, section {
   flex-direction: row;
   justify-content: space-evenly;
   margin: 50px 0; }
+  .contacto__imagen {
+    background-color: white;
+    opacity: 0.8; }
   .contacto__formulario {
     width: 300px; }
   .contacto__formulario__grupo {
