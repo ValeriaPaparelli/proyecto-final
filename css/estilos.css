@@ -76,7 +76,8 @@ main, section {
 
 @media (max-width: 480px) {
   main, section {
-    width: 100%; }
+    width: 100%;
+    padding: 10px 15px; }
   .generales__email, .generales__instagram {
     margin-right: 0px;
     margin-top: 0;
@@ -424,6 +425,7 @@ main, section {
 /*Estilos Responsive */
 @media (max-width: 480px) {
   .nosotros {
+    padding: 0 15px;
     width: 100% !important;
     grid-template-areas: "titulo-nosotros" "foto-nosotros" "texto-nosotros"; } }
 
@@ -663,7 +665,8 @@ main, section {
     padding: 0 10px; }
     .footer__contenido {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      padding: 15px; }
       .footer__contenido__alondra {
         width: 100%; }
       .footer__contenido__alondra__parrafo {
