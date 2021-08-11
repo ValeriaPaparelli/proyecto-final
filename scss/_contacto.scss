@@ -19,6 +19,8 @@
             width: 100%;
         }
         .botonEnviar {
+            display: block;
+            text-align: center;
             text-decoration: none;
             background-color: $marronIntermedio;
             color: white;

@@ -593,6 +593,8 @@ main, section {
       padding: 10px;
       width: 100%; }
     .contacto__formulario__grupo .botonEnviar {
+      display: block;
+      text-align: center;
       text-decoration: none;
       background-color: #b39864;
       color: white;
@@ -685,7 +687,7 @@ main, section {
     text-align: center;
     color: #413838;
     padding-bottom: 30px;
-    font-size: 50px; }
+    font-size: 50   px; }
   .error__parrafo {
     color: #534343;
     padding-bottom: 30px; }
