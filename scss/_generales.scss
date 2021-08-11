@@ -46,6 +46,10 @@ main, section {
     margin-bottom: 20px;
 }
 
+.generales__mediaLink:hover {
+    color: $marronIntermedio;
+}
+
 @each $clase, $icon in $media {
     .generales__#{$clase} {
         background-image: url(../media/#{$icon}.png);
