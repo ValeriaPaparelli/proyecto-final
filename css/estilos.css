@@ -592,14 +592,15 @@ main, section {
       border-bottom: 1px solid #b39864;
       padding: 10px;
       width: 100%; }
-    .contacto__formulario__grupo button {
+    .contacto__formulario__grupo .botonEnviar {
+      text-decoration: none;
       background-color: #b39864;
       color: white;
       font-weight: bold;
       width: 100%;
       border: none;
       padding: 10px; }
-    .contacto__formulario__grupo button:hover {
+    .contacto__formulario__grupo .botonEnviar:hover {
       background-color: #cfcab0; }
 
 /* Estilos Responsive*/
@@ -673,3 +674,42 @@ main, section {
     .footer__derechos > p {
       margin-top: 0;
       width: 100%; } }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .error__imagen {
+    padding: 30px 0; }
+  .error__404 {
+    text-align: center;
+    color: #413838;
+    padding-bottom: 30px;
+    font-size: 50px; }
+  .error__parrafo {
+    color: #534343;
+    padding-bottom: 30px; }
+
+.go-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  background-color: gray;
+  font-weight: bold;
+  border: none;
+  padding: 10px; }
+
+.go-home > a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  text-align: center; }
+
+.go-home:hover {
+  background-color: silver; }
+
+@media (max-width: 480px) {
+  .error__parrafo {
+    text-align: center; } }

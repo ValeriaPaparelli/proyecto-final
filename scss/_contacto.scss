@@ -18,7 +18,8 @@
             padding: 10px;
             width: 100%;
         }
-        button {
+        .botonEnviar {
+            text-decoration: none;
             background-color: $marronIntermedio;
             color: white;
             font-weight: bold;
@@ -26,7 +27,7 @@
             border: none;
             padding: 10px;
         } 
-        button:hover {
+        .botonEnviar:hover {
             background-color: $marronClaro;
         }
         
