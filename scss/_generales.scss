@@ -13,6 +13,19 @@ main, section {
     width: $anchoTotal - $margenGeneral;
     margin: 20px auto;
     padding: 10px;
+    animation-duration: 1s;
+    animation-name: slideIn;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        margin-top: 40px;
+    }
+    to {
+        opacity: 1;
+        margin-top: 20px;
+    }
 }
 
 .generales__titulos {
