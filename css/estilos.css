@@ -11,7 +11,17 @@ body {
 main, section {
   width: 90%;
   margin: 20px auto;
-  padding: 10px; }
+  padding: 10px;
+  animation-duration: 1s;
+  animation-name: slideIn; }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin-top: 40px; }
+  to {
+    opacity: 1;
+    margin-top: 20px; } }
 
 .generales__titulos {
   color: #b39864;
@@ -405,7 +415,7 @@ main, section {
 
 /*En pantallas para IPad, netbook y de escritorio se ve bien y está adaptada*/
 .nosotros {
-  margin-top: 40px;
+  margin-top: 20px;
   display: grid;
   grid-template-areas: "foto-nosotros  titulo-nosotros" "foto-nosotros  texto-nosotros";
   margin-bottom: 50px;
@@ -581,7 +591,7 @@ main, section {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 50px 0; }
+  margin: 20px 0 50px; }
   .contacto__imagen {
     background-color: white;
     opacity: 0.8; }
