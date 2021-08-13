@@ -1,5 +1,5 @@
 # Proyecto Final
-Sitio web de productos de cosmética natural. 
+Sitio web de productos de cosmética natural. (Ver en [GitHub Pages](https://valeriapaparelli.github.io/proyecto-final/))
 
 Cuenta con 5 secciones: Home, Nosotros, Productos, Cuidados y Contacto, y una página de Error 404. 
 
@@ -14,9 +14,6 @@ La página de Contacto tiene un formulario que aún no realiza ninguna acción, 
 Los distintos links del sitio, tanto del mail como del instagram te llevan a los sitios correspondientes. 
 
 Todas las secciones y páginas están adaptadas a distintos dispositivos (mobile, tablet y desktop).
-
-## GitHub Pages
-El sitio se encuentra publicado [GitHub Pages](https://valeriapaparelli.github.io/proyecto-final/)
 
 ## Modo desarrollo
 Para correr el proyecto localmente se deben seguir los siguientes pasos:
