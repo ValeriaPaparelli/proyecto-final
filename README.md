@@ -7,7 +7,7 @@ Tiene un menú de navegación con un submenú en la sección Productos que te ll
 
 También se puede acceder a estas secciones desde el home, dónde se encuentran 4 imágenes que están linkeadas a estas secciones. 
 
-En la sección Cuidados se puede acceder a distintos artículos. En ella podemos encontrar una breve descripción de cada artículo con un link (Leer más...) a la página del mismo. En cada una de estas páginas, al costado se encuentra el título de cada artículo, con un link que se puede acceder al mismo. Además, se resalta el título de la página del artículo que se está leyendo. 
+En la sección Cuidados se puede acceder a distintos artículos. En ella podemos encontrar una breve descripción de cada artículo con un link (Leer más...) a la página del mismo. Cada una de estas páginas, cuenta con un menú lateral, con links a cada uno de los otros artículos. 
 
 La página de Contacto tiene un formulario que aún no realiza ninguna acción, por lo tanto, el "botón" Enviar es un link que te lleva a una página personalizada de Error 404. 
 
