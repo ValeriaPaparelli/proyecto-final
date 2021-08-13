@@ -1,6 +1,3 @@
-
-/*Agregué position fixed para que el menú siempre esté visible al hacer scroll*/
-
 .header {
     position: fixed;
     width: 100%;
@@ -97,7 +94,7 @@
     padding-left: 0px;
 }
 
-//Estilos Responsive
+/* Estilos Responsive*/
 
 @media (max-width: 1024px) {
     .burgerBtn {
