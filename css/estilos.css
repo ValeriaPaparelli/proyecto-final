@@ -221,6 +221,7 @@ main, section {
   display: flex;
   justify-content: center;
   padding: 15px;
+  margin-top: 20px;
   margin-bottom: 40px;
   color: #594c34;
   font-family: "Playfair Display", serif;
@@ -441,7 +442,6 @@ main, section {
 
 @media (max-width: 1024px) {
   .nosotros {
-    margin-top: 20px;
     width: 100%;
     grid-template-areas: "titulo-nosotros" "foto-nosotros" "texto-nosotros";
     grid-template-columns: 100%;
