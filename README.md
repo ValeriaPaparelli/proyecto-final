@@ -3,7 +3,7 @@ Sitio web de productos de cosmética natural. (Ver en [GitHub Pages](https://val
 
 Cuenta con 5 secciones: Home, Nosotros, Productos, Cuidados y Contacto, y una página de Error 404. 
 
-Tiene un menú de navegación con un submenú en la sección Productos que te lleva a las distintas categorás (Productos faciales, corporales, de limpieza y mascarillas faciales).
+Tiene un menú de navegación con un submenú en la sección Productos que te lleva a las distintas categorías (Productos faciales, corporales, de limpieza y mascarillas faciales).
 
 También se puede acceder a estas secciones desde el home, dónde se encuentran 4 imágenes que están linkeadas a estas secciones. 
 
