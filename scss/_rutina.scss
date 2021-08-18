@@ -3,14 +3,13 @@
     justify-content: space-between;
     &__articulo {
         width: 65%;
-        
         &__imagen {
             display: block;
             float: left;
             margin-right: 15px;
         } 
         &__contenido {
-            margin-top: 20px;
+        margin-top: 20px;
         }
     }
     &__otros {
@@ -45,8 +44,14 @@
 /* Estilos Responsive*/
 
 @media (max-width: 1024px) {
+    .articulos {
+        flex-direction: column;
+    }
     .articulos__otros {
-        display: none;
+        border-left: none;
+        padding-left: 0;
+        width: 100%;
+        border-top: 1px solid silver;
     }
     .articulos__articulo {
         width: 100%;
