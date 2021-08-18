@@ -15,6 +15,8 @@ Los distintos links del sitio, tanto del mail como del instagram te llevan a los
 
 Todas las secciones y páginas están adaptadas a distintos dispositivos (mobile, tablet y desktop).
 
+Se agregó configuración SSH para github.
+
 ## Modo desarrollo
 Para correr el proyecto localmente se deben seguir los siguientes pasos:
 - Clonar el proyecto
