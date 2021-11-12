@@ -1,8 +1,8 @@
 .producto {
     display: grid;
     grid-template-areas: 
-    "titulo-producto titulo-producto"
-    "foto-producto   descripcion-producto";
+        "titulo-producto titulo-producto"
+        "foto-producto   descripcion-producto";
     border-top: 1px solid $grisClaro;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr [descripcion-producto] 0.1fr;
