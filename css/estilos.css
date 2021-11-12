@@ -177,7 +177,8 @@ main, section {
         right: 20px;
         -webkit-box-shadow: 0px 6px 17px 5px rgba(0, 0, 0, 0.1);
         box-shadow: 0px 6px 17px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1; }
+        z-index: 1;
+        display: none; }
         .header__menu__carrito__detalle__productos {
           list-style-type: none;
           padding-left: 0; }
