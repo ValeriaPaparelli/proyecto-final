@@ -31,7 +31,7 @@ $(() => {
             $('#carrito-total-contenedor').hide();
             $('#carrito-botones').hide();
             $('#carrito-productos').html(`<li class="header__menu__carrito__detalle__productos__vacio">
-                El Carrito está vacío
+                El Carrito está vacío. <a href="/index.html#nuestros-productos">Ver productos</a>
             </li>`);
             return;
         }

@@ -234,8 +234,14 @@ main, section {
             border-top: 1px solid #d8d8d8;
             padding: 10px; }
           .header__menu__carrito__detalle__productos__vacio {
-            padding: 20px;
-            color: gray; }
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px;
+            color: gray;
+            font-size: 14px; }
+            .header__menu__carrito__detalle__productos__vacio a {
+              font-size: 12px; }
           .header__menu__carrito__detalle__productos__nombre {
             grid-area: nombre-producto;
             text-align: left; }

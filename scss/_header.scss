@@ -139,8 +139,15 @@
                         padding: 10px;
                     }
                     &__vacio {
-                        padding: 20px; 
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 15px; 
                         color: gray;
+                        font-size: 14px;
+                        a {
+                            font-size: 12px;
+                        }
                     }
                     &__nombre {
                         grid-area: nombre-producto;
