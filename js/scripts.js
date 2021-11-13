@@ -1,6 +1,9 @@
-const URL_JSON = 'data/productos.json';
+//const URL_JSON = 'data/productos.json';
 
 $(() => {
+
+    let mostrarCarrito = false;
+
     const agregarEventoClick = (array, prefijo) => {
         array.forEach((producto, i) => {
             $(`#${prefijo}-${i}`).on('click', () => {
@@ -36,10 +39,12 @@ $(() => {
     const actualizarCarritoDOM = () => {
         $('#cantidad-productos').html(`${miCarrito.items.length}`);
         $('#total').html(`$${miCarrito.total}`);
-        $('#carrito').html('');
+        $('#carrito-productos').html('');
 
         if (miCarrito.items.length === 0) {
-            $('#carrito').html('<div><p class="parrafoCarrito">El carrito está vacio</p></div>');
+            $('#carrito-productos').html(`<li class="header__menu__carrito__detalle__productos__vacio">
+                El Carrito está vacío
+            </li>`);
             return;
         }
     
@@ -55,7 +60,7 @@ $(() => {
                         </div>    
                     </div>
                 </div>`;
-            $('#carrito').append(detalleCarrito);
+            $('#carrito-productos').append(detalleCarrito);
         });
 
         agregarEventoClick(miCarrito.items, 'item');
@@ -90,10 +95,14 @@ $(() => {
 
     actualizarCarritoDOM();
 
-    $('#verCarrito').on('click', () => {
-        $('#verCarrito').hide();
-        $('#detalleCarrito').show();
-        $('#ocultarCarrito').show();
+    $('#carrito').on('click', () => {
+        if (mostrarCarrito) {
+            $('#carrito-detalle').hide();
+            mostrarCarrito = false;
+        } else {
+            $('#carrito-detalle').show();
+            mostrarCarrito = true;
+        }
     });
 
     $('#ocultarCarrito').on('click', () => {
@@ -111,7 +120,7 @@ $(() => {
         }
     });
 
-    $('#vaciarCarrito').on('click', () => eliminarProductos());
+    $('#carrito-vaciaro').on('click', () => eliminarProductos());
 });
 
 {/* <li class="header__menu__carrito__detalle__productos__item">
