@@ -72,7 +72,7 @@
             background-position: center;
             position: relative;
             cursor: pointer;
-            opacity: 0.7;
+            opacity: 0.6;
             &__cantidad {
                 position: absolute;
                 top: -5px;
@@ -85,9 +85,11 @@
                 justify-content: center;
                 font-size: 10px;
                 align-items: center;
-                background-color: rgb(58, 144, 47);
+                background-color: $verdeOscuro;
+                border: 1px solid white;
             }
             &__detalle {
+                border: 1px solid rgb(218, 218, 218);
                 position: absolute;
                 background-color: white;
                 width: 350px;
@@ -98,22 +100,47 @@
                 z-index: 1;
                 display: none;
                 &__productos {
+                    background-color: rgb(243, 243, 243);
                     list-style-type: none;
                     padding-left: 0;
+                    max-height: 160px;
+                    overflow-y: scroll;
+
+                    // estilos para scroll
+                    &::-webkit-scrollbar {
+                        -webkit-appearance: none;
+                    }
+                    &::-webkit-scrollbar:vertical {
+                        width:10px;
+                    }
+                    &::-webkit-scrollbar-button:increment, &::-webkit-scrollbar-button {
+                        display: none;
+                    } 
+                    &::-webkit-scrollbar:horizontal {
+                        height: 10px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #797979;
+                        border-radius: 20px;
+                        border: 2px solid #f1f2f3;
+                    }
+                    &::-webkit-scrollbar-track {
+                        border-radius: 10px;  
+                    }
+
                     &__item {
                         display: grid;
                         grid-template-areas: 
                             "nombre-producto subtotol-producto eliminar-producto";
                         grid-template-columns: 2fr 0.9fr 0.25fr;
                         padding: 10px 5px;
-                        font-size: 14px;
+                        font-size: 13px;
                         border-top: 1px solid rgb(216, 216, 216);
                         padding: 10px;
                     }
                     &__vacio {
-                        padding: 10px; 
+                        padding: 20px; 
                         color: gray;
-                        background-color: rgb(243, 243, 243);
                     }
                     &__nombre {
                         grid-area: nombre-producto;
@@ -130,7 +157,7 @@
                         align-items: center;
                         button {
                             color: white;
-                            background-color: rgb(233, 138, 138);
+                            background-color: $rojoClaro;
                             padding: 3px 6px;
                             border-radius: 3px;
                             display: flex;
@@ -146,14 +173,14 @@
                     justify-content: space-between;
                     padding: 5px 15px;
                     font-size: 14px;
-                    border-top: 1px solid silver;
-                    background-color: rgb(235, 235, 235);
+                    border-top: 1px solid rgb(224, 224, 224);
+                    font-weight: bold;
                 }
                 &__botones {
                     display: flex;
                     justify-content: space-between;
                     padding: 10px;
-                    border-top: 1px solid silver;
+                    border-top: 1px solid rgb(230, 230, 230);
                     &__checkout, &__vaciar {
                         color: white;
                         padding: 5px 15px;
@@ -162,10 +189,10 @@
                         border-radius: 5px;
                     }
                     &__checkout {
-                        background-color: rgb(58, 144, 47);
+                        background-color: $verdeClaro;
                     }
                     &__vaciar {
-                        background-color: rgb(187, 103, 100);
+                        background-color: $rojoClaro;
                     }
                 }
             }
