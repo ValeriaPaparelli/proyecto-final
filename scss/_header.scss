@@ -15,6 +15,7 @@
     box-shadow: 0px -2px 9px 5px rgba(0,0,0,0.2);
     &__logo {
         width: 80px;
+        margin-right: 80px;
     }
     &__botonMenu {
         display: none;
@@ -65,6 +66,7 @@
             background-image: url(../media/carrito.jpg);
             width: 50px;
             height: 50px;
+            margin: 0px auto;
             background-size: 50px;
             background-repeat: no-repeat;
             background-position: center;
@@ -88,7 +90,7 @@
             &__detalle {
                 position: absolute;
                 background-color: white;
-                width: 300px;
+                width: 350px;
                 top: 55px;
                 right: 20px; 
                 -webkit-box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.1); 
@@ -101,28 +103,51 @@
                     &__item {
                         display: grid;
                         grid-template-areas: 
-                            "nombre-producto cantidad-producto subtotol-producto";
-                        grid-template-columns: 2fr 0.5fr 0.8fr;
-                        padding: 5px;
-                        font-size: 12px;
+                            "nombre-producto subtotol-producto eliminar-producto";
+                        grid-template-columns: 2fr 0.9fr 0.25fr;
+                        padding: 10px 5px;
+                        font-size: 14px;
                         border-top: 1px solid rgb(216, 216, 216);
                         padding: 10px;
                     }
                     &__vacio {
-                        padding: 20px; 
-                        color: gray; 
+                        padding: 10px; 
+                        color: gray;
+                        background-color: rgb(243, 243, 243);
                     }
                     &__nombre {
                         grid-area: nombre-producto;
                         text-align: left;
                     }
-                    &__cantidad {
-                        grid-area: cantidad-producto;
-                    }
                     &__subtotal {
                         grid-area: subtotol-producto;
                         text-align: right;
                     }
+                    &__eliminar {
+                        grid-area: eliminar-producto;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        button {
+                            color: white;
+                            background-color: rgb(233, 138, 138);
+                            padding: 3px 6px;
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 6px;
+                            border: none;
+                        }
+                    }
+                }
+                &__total {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 15px;
+                    font-size: 14px;
+                    border-top: 1px solid silver;
+                    background-color: rgb(235, 235, 235);
                 }
                 &__botones {
                     display: flex;

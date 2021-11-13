@@ -109,7 +109,8 @@ main, section {
   -webkit-box-shadow: 0px -2px 9px 5px rgba(0, 0, 0, 0.2);
   box-shadow: 0px -2px 9px 5px rgba(0, 0, 0, 0.2); }
   .header__logo {
-    width: 80px; }
+    width: 80px;
+    margin-right: 80px; }
   .header__botonMenu {
     display: none; }
   .header nav {
@@ -151,6 +152,7 @@ main, section {
       background-image: url(../media/carrito.jpg);
       width: 50px;
       height: 50px;
+      margin: 0px auto;
       background-size: 50px;
       background-repeat: no-repeat;
       background-position: center;
@@ -173,7 +175,7 @@ main, section {
       .header__menu__carrito__detalle {
         position: absolute;
         background-color: white;
-        width: 300px;
+        width: 350px;
         top: 55px;
         right: 20px;
         -webkit-box-shadow: 0px 6px 17px 5px rgba(0, 0, 0, 0.1);
@@ -185,23 +187,44 @@ main, section {
           padding-left: 0; }
           .header__menu__carrito__detalle__productos__item {
             display: grid;
-            grid-template-areas: "nombre-producto cantidad-producto subtotol-producto";
-            grid-template-columns: 2fr 0.5fr 0.8fr;
-            padding: 5px;
-            font-size: 12px;
+            grid-template-areas: "nombre-producto subtotol-producto eliminar-producto";
+            grid-template-columns: 2fr 0.9fr 0.25fr;
+            padding: 10px 5px;
+            font-size: 14px;
             border-top: 1px solid #d8d8d8;
             padding: 10px; }
           .header__menu__carrito__detalle__productos__vacio {
-            padding: 20px;
-            color: gray; }
+            padding: 10px;
+            color: gray;
+            background-color: #f3f3f3; }
           .header__menu__carrito__detalle__productos__nombre {
             grid-area: nombre-producto;
             text-align: left; }
-          .header__menu__carrito__detalle__productos__cantidad {
-            grid-area: cantidad-producto; }
           .header__menu__carrito__detalle__productos__subtotal {
             grid-area: subtotol-producto;
             text-align: right; }
+          .header__menu__carrito__detalle__productos__eliminar {
+            grid-area: eliminar-producto;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; }
+            .header__menu__carrito__detalle__productos__eliminar button {
+              color: white;
+              background-color: #e98a8a;
+              padding: 3px 6px;
+              border-radius: 3px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 6px;
+              border: none; }
+        .header__menu__carrito__detalle__total {
+          display: flex;
+          justify-content: space-between;
+          padding: 5px 15px;
+          font-size: 14px;
+          border-top: 1px solid silver;
+          background-color: #ebebeb; }
         .header__menu__carrito__detalle__botones {
           display: flex;
           justify-content: space-between;
@@ -553,7 +576,7 @@ main, section {
     .producto__precio__boton {
       font-size: 12px;
       border-radius: 5px;
-      padding: 0 5px;
+      padding: 0 10px;
       margin-left: 25px;
       border: none;
       color: white;
