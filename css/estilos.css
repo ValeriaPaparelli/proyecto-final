@@ -550,6 +550,14 @@ main, section {
   .producto__precio {
     font-size: 24px;
     color: #b39864; }
+    .producto__precio__boton {
+      font-size: 12px;
+      border-radius: 5px;
+      padding: 0 5px;
+      margin-left: 25px;
+      border: none;
+      color: white;
+      background-color: #b39864; }
 
 /* Estilos Responsive*/
 @media (max-width: 480px) {

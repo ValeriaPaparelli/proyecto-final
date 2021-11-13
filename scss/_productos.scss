@@ -27,6 +27,15 @@
     &__precio {
         font-size: 24px;
         color: $marronIntermedio;
+        &__boton {
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 0 5px;
+            margin-left: 25px;
+            border: none;
+            color: white;
+            background-color: $marronIntermedio;
+        }
     }
 }
 
