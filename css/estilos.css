@@ -227,8 +227,8 @@ main, section {
             border-radius: 10px; }
           .header__menu__carrito__detalle__productos__item {
             display: grid;
-            grid-template-areas: "nombre-producto subtotol-producto eliminar-producto";
-            grid-template-columns: 2fr 0.9fr 0.25fr;
+            grid-template-areas: "nombre-producto cantidad-producto subtotol-producto eliminar-producto";
+            grid-template-columns: 2fr 0.3fr 0.5fr 0.25fr;
             padding: 10px 5px;
             font-size: 13px;
             border-top: 1px solid #d8d8d8;
@@ -245,6 +245,8 @@ main, section {
           .header__menu__carrito__detalle__productos__nombre {
             grid-area: nombre-producto;
             text-align: left; }
+          .header__menu__carrito__detalle__productos__cantidad {
+            grid-area: cantidad-producto; }
           .header__menu__carrito__detalle__productos__subtotal {
             grid-area: subtotol-producto;
             text-align: right; }

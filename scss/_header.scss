@@ -131,8 +131,8 @@
                     &__item {
                         display: grid;
                         grid-template-areas: 
-                            "nombre-producto subtotol-producto eliminar-producto";
-                        grid-template-columns: 2fr 0.9fr 0.25fr;
+                            "nombre-producto cantidad-producto subtotol-producto eliminar-producto";
+                        grid-template-columns: 2fr 0.3fr 0.5fr 0.25fr;
                         padding: 10px 5px;
                         font-size: 13px;
                         border-top: 1px solid rgb(216, 216, 216);
@@ -152,6 +152,9 @@
                     &__nombre {
                         grid-area: nombre-producto;
                         text-align: left;
+                    }
+                    &__cantidad {
+                        grid-area: cantidad-producto;
                     }
                     &__subtotal {
                         grid-area: subtotol-producto;

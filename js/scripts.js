@@ -15,15 +15,15 @@ $(() => {
     };
 
     const agregarEventoClickCarrito = () => {
-        miCarrito.items.forEach((producto, i) => {
-            $(`#producto-carrito-${i}`).on('click', () => {
-                eliminarProducto(producto);
+        miCarrito.items.forEach((item, i) => {
+            $(`#item-${i}`).on('click', () => {
+                eliminarItem(i);
             });
         });
     };
     
     const actualizarCarritoDOM = () => {
-        $('#carrito-cantidad').html(`${miCarrito.items.length}`);
+        $('#carrito-cantidad').html(`${miCarrito.cantidadProductos()}`);
         $('#carrito-total').html(`$${miCarrito.total}`);
         $('#carrito-productos').html('');
 
@@ -39,17 +39,20 @@ $(() => {
         $('#carrito-total-contenedor').show();
         $('#carrito-botones').show();
 
-        miCarrito.items.forEach((producto, i) => {
+        miCarrito.items.forEach((item, i) => {
             const productosCarrito = `
                 <li class="header__menu__carrito__detalle__productos__item">
                     <span class="header__menu__carrito__detalle__productos__nombre">
-                        ${producto.nombre}
+                        ${item.nombre}
+                    </span>
+                    <span class="header__menu__carrito__detalle__productos__cantidad">
+                        x${item.cantidad}
                     </span>
                     <span class="header__menu__carrito__detalle__productos__subtotal">
-                        $${producto.precio}
+                        $${item.total}
                     </span>
                     <span class="header__menu__carrito__detalle__productos__eliminar">
-                        <button id="producto-carrito-${i}">X</button>
+                        <button id="item-${i}">X</button>
                     </span>
                 </li>`;
             $('#carrito-productos').append(productosCarrito);
@@ -63,7 +66,7 @@ $(() => {
         actualizarCarritoDOM();
     };
     
-    const eliminarProducto = (posicion) => {
+    const eliminarItem = (posicion) => {
         miCarrito.quitarDelCarrito(posicion);
         actualizarCarritoDOM();
     }
