@@ -1,8 +1,8 @@
 .producto {
     display: grid;
     grid-template-areas: 
-    "titulo-producto titulo-producto"
-    "foto-producto   descripcion-producto";
+        "titulo-producto titulo-producto"
+        "foto-producto   descripcion-producto";
     border-top: 1px solid $grisClaro;
     grid-template-rows: auto 1fr;
     grid-template-columns: auto 1fr [descripcion-producto] 0.1fr;
@@ -27,6 +27,15 @@
     &__precio {
         font-size: 24px;
         color: $marronIntermedio;
+        &__boton {
+            font-size: 12px;
+            border-radius: 5px;
+            padding: 0 10px;
+            margin-left: 25px;
+            border: none;
+            color: white;
+            background-color: $marronIntermedio;
+        }
     }
 }
 

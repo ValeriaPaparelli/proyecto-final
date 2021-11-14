@@ -15,6 +15,7 @@
     box-shadow: 0px -2px 9px 5px rgba(0,0,0,0.2);
     &__logo {
         width: 80px;
+        margin-right: 80px;
     }
     &__botonMenu {
         display: none;
@@ -45,7 +46,6 @@
             text-align: left;
             display: none;
             justify-content: center;
-            z-index: 1000;
             -webkit-box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.1); 
             box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.1);
             z-index: 1;
@@ -57,6 +57,155 @@
         &__submenu li a:hover {
             color: $marronIntermedio;
             opacity: 0.6;
+        }
+        &__carrito-container {
+            position: relative;
+        }
+        &__carrito {
+            border-radius: 50%;
+            background-image: url(../media/carrito.jpg);
+            width: 50px;
+            height: 50px;
+            margin: 0px auto;
+            background-size: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            cursor: pointer;
+            opacity: 0.6;
+            &__cantidad {
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                display: flex;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                color: white;
+                justify-content: center;
+                font-size: 10px;
+                align-items: center;
+                background-color: $verdeOscuro;
+                border: 1px solid white;
+            }
+            &__detalle {
+                border: 1px solid rgb(218, 218, 218);
+                position: absolute;
+                background-color: white;
+                width: 350px;
+                top: 55px;
+                right: 20px; 
+                -webkit-box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.1); 
+                box-shadow: 0px 6px 17px 5px rgba(0,0,0,0.1);
+                z-index: 1;
+                display: none;
+                &__productos {
+                    background-color: rgb(243, 243, 243);
+                    list-style-type: none;
+                    padding-left: 0;
+                    max-height: 160px;
+                    overflow-y: scroll;
+
+                    // estilos para scroll
+                    &::-webkit-scrollbar {
+                        -webkit-appearance: none;
+                    }
+                    &::-webkit-scrollbar:vertical {
+                        width:10px;
+                    }
+                    &::-webkit-scrollbar-button:increment, &::-webkit-scrollbar-button {
+                        display: none;
+                    } 
+                    &::-webkit-scrollbar:horizontal {
+                        height: 10px;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: #797979;
+                        border-radius: 20px;
+                        border: 2px solid #f1f2f3;
+                    }
+                    &::-webkit-scrollbar-track {
+                        border-radius: 10px;  
+                    }
+
+                    &__item {
+                        display: grid;
+                        grid-template-areas: 
+                            "nombre-producto cantidad-producto subtotol-producto eliminar-producto";
+                        grid-template-columns: 2fr 0.3fr 0.5fr 0.25fr;
+                        padding: 10px 5px;
+                        font-size: 13px;
+                        border-top: 1px solid rgb(216, 216, 216);
+                        padding: 10px;
+                    }
+                    &__vacio {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 15px; 
+                        color: gray;
+                        font-size: 14px;
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                    &__nombre {
+                        grid-area: nombre-producto;
+                        text-align: left;
+                    }
+                    &__cantidad {
+                        grid-area: cantidad-producto;
+                    }
+                    &__subtotal {
+                        grid-area: subtotol-producto;
+                        text-align: right;
+                    }
+                    &__eliminar {
+                        grid-area: eliminar-producto;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+                        button {
+                            color: white;
+                            background-color: $rojoClaro;
+                            padding: 3px 6px;
+                            border-radius: 3px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 6px;
+                            border: none;
+                        }
+                    }
+                }
+                &__total {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 5px 15px;
+                    font-size: 14px;
+                    border-top: 1px solid rgb(224, 224, 224);
+                    font-weight: bold;
+                }
+                &__botones {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px;
+                    border-top: 1px solid rgb(230, 230, 230);
+                    &__checkout, &__vaciar {
+                        color: white;
+                        padding: 5px 15px;
+                        font-size: 12px;
+                        border: none;
+                        border-radius: 5px;
+                    }
+                    &__checkout {
+                        background-color: $verdeClaro;
+                    }
+                    &__vaciar {
+                        background-color: $rojoClaro;
+                    }
+                }
+            }
         }
     }
     &__menu > li {

@@ -1,9 +1,9 @@
 .cuidados {
     display: grid;
     grid-template-areas: 
-    "titulo-principal titulo-principal titulo-principal titulo-principal"
-    "foto-cuidados1 titulo-cuidados1 foto-cuidados2 titulo-cuidados2"
-    "foto-cuidados1 texto-cuidados1 foto-cuidados2 texto-cuidados2";
+        "titulo-principal titulo-principal titulo-principal titulo-principal"
+        "foto-cuidados1 titulo-cuidados1 foto-cuidados2 titulo-cuidados2"
+        "foto-cuidados1 texto-cuidados1 foto-cuidados2 texto-cuidados2";
     &__tituloPrincipal {
         grid-area: titulo-principal;
         border-bottom: 1px solid $grisClaro;
