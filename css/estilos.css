@@ -202,7 +202,7 @@ main, section {
         border: 1px solid #dadada;
         position: absolute;
         background-color: white;
-        width: 350px;
+        width: 380px;
         top: 55px;
         right: 20px;
         -webkit-box-shadow: 0px 6px 17px 5px rgba(0, 0, 0, 0.1);
@@ -212,7 +212,7 @@ main, section {
         .header__menu__carrito__detalle__productos {
           list-style-type: none;
           padding-left: 0;
-          max-height: 160px;
+          max-height: 190px;
           overflow-y: scroll; }
           .header__menu__carrito__detalle__productos::-webkit-scrollbar {
             -webkit-appearance: none; }
@@ -247,12 +247,20 @@ main, section {
               font-size: 12px; }
           .header__menu__carrito__detalle__productos__nombre {
             grid-area: nombre-producto;
-            text-align: left; }
+            text-align: left;
+            line-height: 36px;
+            vertical-align: middle; }
+            .header__menu__carrito__detalle__productos__nombre img {
+              margin-right: 4px; }
           .header__menu__carrito__detalle__productos__cantidad {
-            grid-area: cantidad-producto; }
+            grid-area: cantidad-producto;
+            line-height: 36px;
+            vertical-align: middle; }
           .header__menu__carrito__detalle__productos__subtotal {
             grid-area: subtotol-producto;
-            text-align: right; }
+            text-align: right;
+            line-height: 36px;
+            vertical-align: middle; }
           .header__menu__carrito__detalle__productos__eliminar {
             grid-area: eliminar-producto;
             display: flex;
@@ -262,6 +270,7 @@ main, section {
               color: white;
               background-color: #b47a7a;
               padding: 3px 6px;
+              margin-bottom: 4px;
               border-radius: 3px;
               display: flex;
               justify-content: center;

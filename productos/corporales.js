@@ -7,7 +7,7 @@ const productos = [
     },
     {
         "id": 7,
-        "nombre": "Crema-gel para piel grasa",
+        "nombre": "Crema de manos",
         "precio": 600,
         "imagen": "../media/manosProducto.jpg"
     }
