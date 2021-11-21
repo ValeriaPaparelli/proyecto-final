@@ -106,7 +106,6 @@
                 z-index: 1;
                 display: none;
                 &__productos {
-                    background-color: rgb(243, 243, 243);
                     list-style-type: none;
                     padding-left: 0;
                     max-height: 160px;
@@ -191,12 +190,14 @@
                     font-size: 14px;
                     border-top: 1px solid rgb(224, 224, 224);
                     font-weight: bold;
+                    background-color: rgb(243, 243, 243);
                 }
                 &__botones {
                     display: flex;
                     justify-content: space-between;
                     padding: 10px;
                     border-top: 1px solid rgb(230, 230, 230);
+                    background-color: rgb(243, 243, 243);
                     &__checkout, &__vaciar {
                         color: white;
                         padding: 5px 15px;

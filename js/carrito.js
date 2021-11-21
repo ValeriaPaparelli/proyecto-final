@@ -13,14 +13,15 @@ class Carrito {
                 nombre: producto.nombre,
                 precio: producto.precio,
                 cantidad: 1,
-                total: producto.precio
+                total: producto.precio,
+                imagen: producto.imagen
             };
             this.items.push(item);
         } else {
             item.cantidad ++;
             item.total = item.precio * item.cantidad;
         }
-        this.total += item.total;
+        this.total += item.precio;
         this.guardarEnStorage();
     }
 

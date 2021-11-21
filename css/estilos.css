@@ -210,7 +210,6 @@ main, section {
         z-index: 1;
         display: none; }
         .header__menu__carrito__detalle__productos {
-          background-color: #f3f3f3;
           list-style-type: none;
           padding-left: 0;
           max-height: 160px;
@@ -275,12 +274,14 @@ main, section {
           padding: 5px 15px;
           font-size: 14px;
           border-top: 1px solid #e0e0e0;
-          font-weight: bold; }
+          font-weight: bold;
+          background-color: #f3f3f3; }
         .header__menu__carrito__detalle__botones {
           display: flex;
           justify-content: space-between;
           padding: 10px;
-          border-top: 1px solid #e6e6e6; }
+          border-top: 1px solid #e6e6e6;
+          background-color: #f3f3f3; }
           .header__menu__carrito__detalle__botones__checkout, .header__menu__carrito__detalle__botones__vaciar {
             color: white;
             padding: 5px 15px;
