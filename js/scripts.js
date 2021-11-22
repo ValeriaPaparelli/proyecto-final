@@ -43,6 +43,7 @@ $(() => {
             const productosCarrito = `
                 <li class="header__menu__carrito__detalle__productos__item">
                     <span class="header__menu__carrito__detalle__productos__nombre">
+                        <img src="${item.imagen}" height="40px" />
                         ${item.nombre}
                     </span>
                     <span class="header__menu__carrito__detalle__productos__cantidad">

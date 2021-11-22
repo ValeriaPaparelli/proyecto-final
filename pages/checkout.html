@@ -11,7 +11,7 @@
     Todos son elaborados con materias primas naturales, amigables con el medio ambiente y el ser humano, sin parabenos ni componentes 
     químicos derivados del petróleo.">
     <!--A cada página le puse un título distinto relacionado con la sección-->
-    <title>Nosotros | Alondra</title>
+    <title>Checkout | Alondra</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -56,14 +56,32 @@
             <a href="../index.html#nuestros-productos">Ver productos</a>
         </div>
         <div id="detalle-carrito" class="checkout__detalle-carrito">
-            <ul id="productos-seleccionados" class="checkout__productos"></ul>
-            <div >
+            <ul id="productos-seleccionados" class="checkout__productos">
+                <li>
+                    <span class="checkout__productos__nombre">
+                        Nombre
+                    </span>
+                    <span class="checkout__productos__precio">
+                        Precio
+                    </span>
+                    <span class="checkout__productos__cantidad">
+                        Cantidad
+                    </span>
+                    <span class="checkout__productos__subtotal">
+                        Subtotal
+                    </span>
+                    <span class="checkout__productos__eliminar">
+                        Eliminar
+                    </span>
+                </li>
+            </ul>
+            <div class="checkout__detalle-carrito__total">
                 <span>Total:</span>
-                <span id="total"></span>
+                <span id="total" class="checkout__detalle-carrito__precio-total"></span>
             </div>
-            <button id="confirmar-compra">
-                Confirmar Compra
-            </button>
+            <div id="confirmar-compra" class="checkout__detalle-carrito__confirmar">
+                <button id="confirmar-compra">Confirmar Compra</button>
+            </div>
         </div>
         <div id="compra" class="checkout__compra">
             <h3>Gracias por tu compra!</h3>

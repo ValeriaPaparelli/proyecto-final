@@ -812,6 +812,84 @@ main, section {
 
 .checkout__detalle-carrito {
   display: none; }
+  .checkout__detalle-carrito__total {
+    border-top: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0;
+    color: gray;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .checkout__detalle-carrito__precio-total {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 25px; }
+  .checkout__detalle-carrito__confirmar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .checkout__detalle-carrito__confirmar button {
+      border: none;
+      background: #789b75;
+      padding: 10px;
+      font-size: 20px;
+      color: white;
+      border-radius: 6px; }
+
+.checkout__productos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+  .checkout__productos__item {
+    display: grid;
+    grid-template-areas: "nombre-producto precio-producto cantidad-producto subtotal-producto eliminar-producto";
+    grid-template-columns: 2fr 0.5fr 0.2fr 0.5fr 0.3fr;
+    padding: 10px 5px;
+    font-size: 18px;
+    border-top: 1px solid #d8d8d8;
+    padding: 10px; }
+  .checkout__productos__nombre {
+    grid-area: nombre-producto;
+    text-align: left;
+    display: flex;
+    align-items: center; }
+    .checkout__productos__nombre img {
+      margin-right: 15px; }
+  .checkout__productos__cantidad {
+    grid-area: cantidad-producto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .checkout__productos__precio {
+    grid-area: precio-producto;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .checkout__productos__subtotal {
+    grid-area: subtotal-producto;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .checkout__productos__eliminar {
+    grid-area: eliminar-producto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .checkout__productos__eliminar button {
+      color: white;
+      background-color: #b47a7a;
+      padding: 8px 10px;
+      margin-bottom: 4px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      border: none; }
 
 .checkout__compra {
   display: none; }

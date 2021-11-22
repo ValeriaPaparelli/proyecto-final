@@ -9,6 +9,97 @@
     }
     &__detalle-carrito {
         display: none;
+        &__total {
+            border-top: 1px solid black;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 15px 0;
+            color: gray;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        &__precio-total {
+            font-size: 28px;
+            font-weight: bold;
+            margin-left: 25px;
+        }
+        &__confirmar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            button {
+                border: none;
+                background: $verdeClaro;
+                padding: 10px;
+                font-size: 20px;
+                color: white;
+                border-radius: 6px;
+            }
+        }
+    }
+    &__productos {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        &__item {
+            display: grid;
+            grid-template-areas: 
+                "nombre-producto precio-producto cantidad-producto subtotal-producto eliminar-producto";
+            grid-template-columns: 2fr 0.5fr 0.2fr 0.5fr 0.3fr;
+            padding: 10px 5px;
+            font-size: 18px;
+            border-top: 1px solid rgb(216, 216, 216);
+            padding: 10px;
+        }
+        &__nombre {
+            grid-area: nombre-producto;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 15px;
+            }
+        }
+        &__cantidad {
+            grid-area: cantidad-producto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__precio {
+            grid-area: precio-producto;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__subtotal {
+            grid-area: subtotal-producto;
+            text-align: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__eliminar {
+            grid-area: eliminar-producto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button {
+                color: white;
+                background-color: $rojoClaro;
+                padding: 8px 10px;
+                margin-bottom: 4px;
+                border-radius: 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                border: none;
+            }
+        }
     }
     &__compra {
         display: none;

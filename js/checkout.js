@@ -23,12 +23,34 @@ $(() => {
     const mostrarProductos = () => {
         $('#total').html(`$${miCarrito.total}`);
         $('#productos-seleccionados').html('');
+        const cabecera = `<li class="checkout__productos__item">
+                <span class="checkout__productos__nombre">
+                    Nombre
+                </span>
+                <span class="checkout__productos__precio">
+                    Precio
+                </span>
+                <span class="checkout__productos__cantidad">
+                    Cantidad
+                </span>
+                <span class="checkout__productos__subtotal">
+                    Subtotal
+                </span>
+                <span class="checkout__productos__eliminar">
+                    Eliminar
+                </span>
+            </li>`;
+        $('#productos-seleccionados').append(cabecera);
+
         miCarrito.items.forEach((item, i) => {
-            const productosCarrito = `
+            productosCarrito = `
                 <li class="checkout__productos__item">
                     <span class="checkout__productos__nombre">
-                        <img src="${item.imagen}" height="40px" />
+                        <img src="${item.imagen}" height="120px" />
                         ${item.nombre}
+                    </span>
+                    <span class="checkout__productos__precio">
+                        $${item.precio}
                     </span>
                     <span class="checkout__productos__cantidad">
                         x${item.cantidad}
