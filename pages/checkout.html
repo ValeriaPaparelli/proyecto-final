@@ -21,7 +21,7 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header__logo-conainer">
             <a href="../index.html"><!--en todas las pàginas el logo te lleva al index-->
                 <img class="header__logo" src="../media/logo-png.png" alt="Logo">
             </a>
@@ -53,7 +53,7 @@
         </div>
         <div id="carrito-vacio" class="checkout__vacio">
             <h3>El carrito está vacío</h3>
-            <a href="../index.html#nuestros-productos">Ver productos</a>
+            <a class="checkout__vacio__link" href="../index.html#nuestros-productos">Ver productos</a>
         </div>
         <div id="detalle-carrito" class="checkout__detalle-carrito">
             <ul id="productos-seleccionados" class="checkout__productos">
@@ -79,9 +79,12 @@
                 <span>Total:</span>
                 <span id="total" class="checkout__detalle-carrito__precio-total"></span>
             </div>
-            <div id="confirmar-compra" class="checkout__detalle-carrito__confirmar">
-                <button id="confirmar-compra">Confirmar Compra</button>
-            </div>
+            <form id="form-compra" class="checkout__detalle-carrito__confirmar">
+                <div class="checkout__detalle-carrito__confirmar__email">
+                    <input id="email" type="email" name="email" placeholder="Ingresá tu email" required />
+                </div>
+                <button type="submit">Confirmar Compra</button>
+            </form>
         </div>
         <div id="compra" class="checkout__compra">
             <h3>Gracias por tu compra!</h3>
@@ -124,6 +127,7 @@
         </div>
     </footer>
     <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/scripts.js"></script>
     <script src="../js/checkout.js"></script>

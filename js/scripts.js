@@ -24,6 +24,7 @@ $(() => {
     
     const actualizarCarritoDOM = () => {
         $('#carrito-cantidad').html(`${miCarrito.cantidadProductos()}`);
+        $('#carrito-cantidad-mobile').html(`${miCarrito.cantidadProductos()}`);
         $('#carrito-total').html(`$${miCarrito.total}`);
         $('#carrito-productos').html('');
 

@@ -23,7 +23,7 @@ $(() => {
     const mostrarProductos = () => {
         $('#total').html(`$${miCarrito.total}`);
         $('#productos-seleccionados').html('');
-        const cabecera = `<li class="checkout__productos__item">
+        const cabecera = `<li class="checkout__productos__item checkout__productos__cabecera">
                 <span class="checkout__productos__nombre">
                     Nombre
                 </span>
@@ -70,12 +70,23 @@ $(() => {
     if(miCarrito.items.length) {
         mostrarProductos();
         $('#detalle-carrito').show();
-        $('#confirmar-compra').on('click', (e) => {
-            e.preventDefault();
-            $('#detalle-carrito').hide();
-            $('#compra').show();
-            miCarrito.vaciarCarrito();
+        $('#form-compra').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true,
+                }
+            },
+            messages: {
+                email: "El Email es requerido y debe contener un formato válido."
+            },
+            submitHandler: () => {
+                $('#detalle-carrito').hide();
+                $('#compra').show();
+                miCarrito.vaciarCarrito();
+            }
         });
+            
     } else {
         $('#carrito-vacio').show();
     }
