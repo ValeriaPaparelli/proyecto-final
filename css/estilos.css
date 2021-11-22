@@ -292,8 +292,8 @@ main, section {
           border-top: 1px solid #e6e6e6;
           background-color: #f3f3f3; }
           .header__menu__carrito__detalle__botones__checkout, .header__menu__carrito__detalle__botones__vaciar {
-            color: white;
-            padding: 5px 15px;
+            color: white !important;
+            padding: 5px 15px !important;
             font-size: 12px;
             border: none;
             border-radius: 5px; }
