@@ -40,23 +40,6 @@
                 </li>
                 <li><a href="./cuidados.html">CUIDADOS</a></li>
                 <li><a href="./contacto.html">CONTACTO</a></li>
-                <li class="header__menu__carrito-container"> 
-                    <div id="carrito" class="header__menu__carrito">
-                        <span id="carrito-cantidad" class="header__menu__carrito__cantidad">0</span>
-                    </div>
-                    <div id="carrito-detalle" class="header__menu__carrito__detalle">
-                        <ul id="carrito-productos" class="header__menu__carrito__detalle__productos">
-                        </ul>
-                        <div id="carrito-total-contenedor" class="header__menu__carrito__detalle__total">
-                            <span>Total: </span> 
-                            <span id="carrito-total">$0</span>
-                        </div>
-                        <div id="carrito-botones" class="header__menu__carrito__detalle__botones">
-                            <a id="carrito-checkout" class="header__menu__carrito__detalle__botones__checkout" href="./checkout.html">Checkout</a>
-                            <button id="carrito-vaciar" class="header__menu__carrito__detalle__botones__vaciar">Vaciar</button>
-                        </div>
-                    </div>
-                </li>
             </ul>
         </nav>
         <div class="header__botonMenu">
@@ -67,6 +50,24 @@
     <main class="checkout"> 
         <div class="checkout__titulo"><!--Esta sección muestra el detalle del carrito antes de confirmar la compra-->
             <h1 class="generales__titulos">Checkout</h1>
+        </div>
+        <div id="carrito-vacio" class="checkout__vacio">
+            <h3>El carrito está vacío</h3>
+            <a href="../index.html#nuestros-productos">Ver productos</a>
+        </div>
+        <div id="detalle-carrito" class="checkout__detalle-carrito">
+            <ul id="productos-seleccionados" class="checkout__productos"></ul>
+            <div >
+                <span>Total:</span>
+                <span id="total"></span>
+            </div>
+            <button id="confirmar-compra">
+                Confirmar Compra
+            </button>
+        </div>
+        <div id="compra" class="checkout__compra">
+            <h3>Gracias por tu compra!</h3>
+            <p>Te enviaremos un mail a tu casilla para cordinar la entrega.</p>
         </div>
     </main>
     <footer class="footer">

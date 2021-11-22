@@ -1,0 +1,16 @@
+.checkout {
+    &__vacio {
+        display: none;
+        h3 {
+            color: gray;
+            font-weight: bold;
+            font-size: 32px;
+        }
+    }
+    &__detalle-carrito {
+        display: none;
+    }
+    &__compra {
+        display: none;
+    }
+}

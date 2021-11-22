@@ -803,6 +803,19 @@ main, section {
     .contacto__media {
       display: none; } }
 
+.checkout__vacio {
+  display: none; }
+  .checkout__vacio h3 {
+    color: gray;
+    font-weight: bold;
+    font-size: 32px; }
+
+.checkout__detalle-carrito {
+  display: none; }
+
+.checkout__compra {
+  display: none; }
+
 .footer {
   width: 90%;
   margin: 20px auto;
