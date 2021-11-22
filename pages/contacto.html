@@ -20,7 +20,7 @@
 </head>
 <body>
     <header class="header">
-        <div>
+        <div class="header__logo-conainer">
             <a href="../index.html"><!--en todas las pàginas el logo te lleva al index-->
                 <img class="header__logo" src="../media/logo-png.png" alt="Logo">
             </a>
@@ -51,13 +51,16 @@
                             <span id="carrito-total">$0</span>
                         </div>
                         <div id="carrito-botones" class="header__menu__carrito__detalle__botones">
-                            <button id="carrito-checkout" class="header__menu__carrito__detalle__botones__checkout">Checkout</button>
+                            <a id="carrito-checkout" class="header__menu__carrito__detalle__botones__checkout" href="./checkout.html">Checkout</a>
                             <button id="carrito-vaciar" class="header__menu__carrito__detalle__botones__vaciar">Vaciar</button>
                         </div>
                     </div>
                 </li>
             </ul>
         </nav>
+        <a class="header__carrito-responsive" href="./checkout.html">
+            <span id="carrito-cantidad-mobile" class="header__carrito-responsive__cantidad">0</span>
+        </a>
         <div class="header__botonMenu">
             <a class="burgerBtn" href="#navbar"></a><!--"botón" para menú responsive-->
         </div>
