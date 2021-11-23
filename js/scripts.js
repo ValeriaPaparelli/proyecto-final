@@ -28,11 +28,20 @@ $(() => {
         $('#carrito-total').html(`$${miCarrito.total}`);
         $('#carrito-productos').html('');
 
+        let linkProductos;
+        let seccionActual = window.location.pathname.split("/").pop();
+
+        if (seccionActual === 'index.html') {
+            linkProductos = '#nuestros-productos';
+        } else {
+            linkProductos = '../index.html#nuestros-productos';
+        }
+
         if (miCarrito.items.length === 0) {
             $('#carrito-total-contenedor').hide();
             $('#carrito-botones').hide();
             $('#carrito-productos').html(`<li class="header__menu__carrito__detalle__productos__vacio">
-                El Carrito está vacío. <a href="/index.html#nuestros-productos">Ver productos</a>
+                El Carrito está vacío. <a href="${linkProductos}">Ver productos</a>
             </li>`);
             return;
         }
