@@ -5,6 +5,8 @@ Cuenta con 5 secciones: Home, Nosotros, Productos, Cuidados y Contacto, y una p�
 
 Tiene un menú de navegación con un submenú en la sección Productos que te lleva a las distintas categorías (Productos faciales, corporales, de limpieza y mascarillas faciales).
 
+El sitio también cuenta con un carrito de compras hecho con javascript.
+
 También se puede acceder a estas secciones desde el home, dónde se encuentran 4 imágenes que están linkeadas a estas secciones. 
 
 En la sección Cuidados se puede acceder a distintos artículos. En ella podemos encontrar una breve descripción de cada artículo con un link (Leer más...) a la página del mismo. Cada una de estas páginas, cuenta con un menú lateral, con links a cada uno de los otros artículos. 
